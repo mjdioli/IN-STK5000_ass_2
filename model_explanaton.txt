@@ -1,0 +1,17 @@
+How close to the reported accuracy do you expect its performance to be in reality?
+In our experiment we have used 5-fold cross validation to find the optimal value of k for kNN, and range for our k value went from 1-20. As we can see from our cv accuracy 
+is between k = 3,7, shape of the curve is resembles more toward an upside down yield - curve, typically bias-variance trade off low-values of k has low bias and higher variance, 
+and most likely to overfit and toward  high values of k are high bias and low variance, and we expect accuracy at it best when k values are between k=3,7. 
+
+What are the factors that might cause it to deviate?
+As we seen that higher values of k gives less complexity in the model and when k values get higher than 20, then the model-curve shows high bias and low variance. 
+So the best value of the k should be at 1...20 as we have chosen in our model and it increase the generalization of the model.  
+
+K-fold cross-validation methode
+data splitted into two sets, such that data can be trained and tested on different sets.
+we have used k-fold cross-validation, splitted data into K equal partitions, that is our k set to 5 and iris dataset has 150 observations
+then each of 5 partition will be divided into 30 observations. In each iteration partition 1 would be the testing set and union of other 4 sets be the training set.
+For example, test set has = 30 observation and train set has 120 observations. This makes more efficient usage of the data since every observation is used both in training and testing
+
+
+
